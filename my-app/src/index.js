@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import HelloWorld from './HelloWorld.jsx';
+import Time from './Time.jsx';
 import * as serviceWorker from './serviceWorker';
+
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+    {/*This is the JSX example file
+    <HelloWorld/>*/}
+    {/*This is the time ticking file*/}
+    <Time/>
+    
+  
+  
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 

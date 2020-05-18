@@ -9,10 +9,12 @@ state = {
 };
 
 callMe(){
+  //function created
   setInterval(()=>{
-  
+  //function body
+  //update the date every 1 second
     this.setState({ date: new Date() });
-    
+  //second argument, update every 1000 ms  
   },1000);
 }
 

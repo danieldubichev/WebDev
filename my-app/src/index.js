@@ -4,7 +4,7 @@ import './index.css';
 import HelloWorld from './HelloWorld.jsx';
 import Time from './Time.jsx';
 import * as serviceWorker from './serviceWorker';
-
+import CompsAndProps from './CompsAndProps.jsx';
 
 
 
@@ -12,11 +12,12 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     
-    {/*This is the JSX example file
+    {/*This is the JSX example file            -- Meant for Introducing JSX
     <HelloWorld/>*/}
-    {/*This is the time ticking file*/}
-    <Time/>
-    
+    {/*This is the time ticking file           -- Meant for Rendering Elements
+    <Time/>*/}
+    {/*This file is for the components and props module           -- Meant for Components and Props*/}
+    <CompsAndProps/>
   
   
   </React.StrictMode>,

@@ -30,7 +30,7 @@ callMe(){
         {this.callMe()}
         <h1>New York City Time</h1>
         <h2>It is {this.state.date.toLocaleTimeString("en-US", {timeZone: "America/New_York"})}.</h2>
-        <h1>Austrailia Time</h1>
+        <h1>Australia Time</h1>
         <h2>It is {this.state.date.toLocaleTimeString("en-US", {timeZone: "Australia/Brisbane"})}.</h2>
         </div>
         

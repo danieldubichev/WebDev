@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 import CompsAndProps from './CompsAndProps.jsx';
 import StateAndLifeCycle from './StateAndLifeCycle.jsx';
 import EventHandling from './EventHandling.jsx';
-
+import ConditionalRendering from './ConditionalRendering.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,8 +20,10 @@ ReactDOM.render(
     <CompsAndProps/>*/}
     {/*This file is intended for component isolation!    -- Meant for State & Lifecycles
     <StateAndLifeCycle/>*/}
-    {/*Event Handling*/}
-    <EventHandling/>
+    {/*Event Handling                                --Basic Button function that changes properties
+    <EventHandling/>*/}
+    {/*Conditional rendering                               --Render Components on the state of your application*/}
+    <ConditionalRendering/>
     
   </React.StrictMode>,
   

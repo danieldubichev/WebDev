@@ -5,7 +5,7 @@ import HelloWorld from './HelloWorld.jsx';
 import Time from './Time.jsx';
 import * as serviceWorker from './serviceWorker';
 import CompsAndProps from './CompsAndProps.jsx';
-
+import StateAndLifeCycle from './StateAndLifeCycle.jsx';
 
 
 
@@ -16,8 +16,10 @@ ReactDOM.render(
     <HelloWorld/>*/}
     {/*This is the time ticking file           -- Meant for Rendering Elements
     <Time/>*/}
-    {/*This file is for the components and props module           -- Meant for Components and Props*/}
-    <CompsAndProps/>
+    {/*This file is for the components and props module           -- Meant for Components and Props*
+    <CompsAndProps/>*/}
+    {/*This file is intended for component isolation!    -- Meant for State & Lifecycles*/}
+    <StateAndLifeCycle/>
   
   
   </React.StrictMode>,

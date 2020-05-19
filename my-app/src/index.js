@@ -6,7 +6,7 @@ import Time from './Time.jsx';
 import * as serviceWorker from './serviceWorker';
 import CompsAndProps from './CompsAndProps.jsx';
 import StateAndLifeCycle from './StateAndLifeCycle.jsx';
-
+import EventHandling from './EventHandling.jsx';
 
 
 ReactDOM.render(
@@ -18,10 +18,11 @@ ReactDOM.render(
     <Time/>*/}
     {/*This file is for the components and props module           -- Meant for Components and Props*
     <CompsAndProps/>*/}
-    {/*This file is intended for component isolation!    -- Meant for State & Lifecycles*/}
-    <StateAndLifeCycle/>
-  
-  
+    {/*This file is intended for component isolation!    -- Meant for State & Lifecycles
+    <StateAndLifeCycle/>*/}
+    {/*Event Handling*/}
+    <EventHandling/>
+    
   </React.StrictMode>,
   
   document.getElementById('root')

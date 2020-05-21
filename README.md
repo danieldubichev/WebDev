@@ -1,2 +1,2 @@
 # WebDev
-Some basic web development programs and exercises
+Web development programs and exercises ranging from beginner to advanced

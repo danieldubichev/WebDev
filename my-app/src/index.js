@@ -8,6 +8,7 @@ import CompsAndProps from './CompsAndProps.jsx';
 import StateAndLifeCycle from './StateAndLifeCycle.jsx';
 import EventHandling from './EventHandling.jsx';
 import ConditionalRendering from './ConditionalRendering.jsx';
+import ListsAndKeys from './ListsAndKeys.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,9 +23,10 @@ ReactDOM.render(
     <StateAndLifeCycle/>*/}
     {/*Event Handling                                --Basic Button function that changes properties
     <EventHandling/>*/}
-    {/*Conditional rendering                               --Render Components on the state of your application*/}
-    <ConditionalRendering/>
-    
+    {/*Conditional rendering                               --Render Components on the state of your application; if and else logic/conditions
+    <ConditionalRendering/>*/}
+    {/*Lists and Keys                              --JS list review, rendering of lists, list components, keys, key rules, and extracting components with keys*/}
+    <ListsAndKeys/>
   </React.StrictMode>,
   
   document.getElementById('root')

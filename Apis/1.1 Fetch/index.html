@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Train: Data/APIs 1</title>
+  </head>
+  
+
+
+
+
+  <body>
+    <h1>Fetch a Signal Logo</h1>
+    <img src="" id="signallogo" width="480" />
+    <script>
+        //logic of code:
+        
+        //1: call fetch(___) where ___ is considered the path "example.jpg" this returns a promise to handle an asynchrounous event; it gets resolved when data is received
+        //2: the response, will receive in text, however we want to convert said response into an image blob
+        //3: complete data stream
+        //4: make an <img> element
+
+        console.log('about to fetch a signal logo');
+      
+        catchSignal()
+
+        //on success, print success
+        //the method then captures the response
+        .then(response => {
+          console.log('Success');
+        })
+        
+        //if error, log details
+        .catch(error => {
+          console.log('error!');
+          console.log(error);
+        });
+
+        //catchSignal()
+        //async function will alwys return a promise.
+        async function catchSignal(){
+          //fetches a photo
+          //and saves its response.
+          //await operator is used for a promise and may only be used inside an async function
+          const response = await fetch('img/VancouverSignal_2.png');
+          console.log(response);
+          //turns promise response (currently  into blob
+          const blob = await response.blob();
+          //print blob response
+          //console.log(blob);
+          //changes blob into DOM (Document Object Model) friendly object.
+          //URL.createObjectURL() takes blob object and changes it into a format that an image element would expect
+          document.getElementById('signallogo').src = URL.createObjectURL(blob);
+
+        }
+
+
+    </script>
+  </body>
+</html>

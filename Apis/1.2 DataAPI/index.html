@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Train: 1.2 Data & API</title>
+  </head>
+  <body>
+
+    <script>
+        getData();
+
+        async function getData(){
+            const response = await fetch('ZonAnn.Ts+dSST.csv'); 
+            const data = await response.text();
+            console.log(data);
+
+            //split up rows/ delete the 0 element
+            const table= data.split(/\n/).slice(1);
+            //split each row into all fields
+            table.forEach(row => {
+              const columns = row.split(',');
+              const year = columns[0];
+              const temp = columns[1];
+
+              console.log(year, temp);
+              
+
+            });
+            //console.log(rows);
+            
+
+
+        }
+
+    </script>
+  </body>
+</html>
